@@ -6,7 +6,16 @@ A language created in 10 days in 1995 to make web pages interactive. Now it runs
 
 ## The short history
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — JavaScript history timeline 1995 to 2026
+```mermaid
+timeline
+    title JavaScript Evolution
+    1995 : Created in 10 days at Netscape
+    1997 : ECMAScript 1 standardized
+    2009 : ES5 + Node.js born
+    2015 : ES6 — modern JS revolution
+    2020 : ES2020 — optional chaining, nullish coalescing
+    2024 : ES2024 — records, tuples (proposal)
+```
 
 **1995** — Brendan Eich creates JavaScript at Netscape. Purpose: add interactivity to web pages. Name is a marketing trick (no relation to Java).
 

@@ -42,7 +42,17 @@ Output: `1`, `2`, `3`. Even with a 0ms delay, the callback is queued, not run im
 
 ## Microtasks vs macrotasks
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — JavaScript event loop microtask macrotask queue diagram
+```mermaid
+flowchart TD
+    JS[JavaScript Code] --> CT[Call Stack]
+    CT -->|async operation| WebAPIs[Web APIs / Node APIs]
+    WebAPIs -->|callback| MQ[Macrotask Queue]
+    WebAPIs -->|promise.then| MiQ[Microtask Queue]
+    EL[Event Loop] -->|check first| MiQ
+    EL -->|then check| MQ
+    MiQ -->|drain all| CT
+    MQ -->|one at a time| CT
+```
 
 There are two queues:
 
@@ -72,7 +82,20 @@ Step by step:
 
 ## Why this matters for backend
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — single thread blocking vs async non-blocking event loop
+```mermaid
+sequenceDiagram
+    participant App
+    participant DB
+    Note over App: BLOCKING (sync)
+    App->>DB: Read file (blocks thread)
+    Note over App: ...waiting... nothing else runs
+    DB-->>App: Done
+    
+    Note over App: NON-BLOCKING (async)
+    App->>DB: Read file (returns immediately)
+    Note over App: Other code runs freely
+    DB-->>App: Callback fires later
+```
 
 A single slow synchronous operation blocks the entire server. Every request waits.
 

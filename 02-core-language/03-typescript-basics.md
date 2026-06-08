@@ -98,7 +98,14 @@ const response: ApiResponse<User> = {
 
 ## TypeScript is a layer
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — TypeScript compiler pipeline ts to js type check erased
+```mermaid
+flowchart LR
+    TS["TypeScript (.ts)\ninterface, types"] --> Parser[Parse AST]
+    Parser --> TC[Type Checker]
+    TC -->|"type errors?"| FAIL[Compilation Error]
+    TC -->|"types OK"| ERASE[Erase Types]
+    ERASE --> JS["JavaScript (.js)\ntypes removed"]
+```
 
 TypeScript compiles to JavaScript. The types are erased. At runtime, it is plain JavaScript. TypeScript does not change how your code runs. It changes how confident you are that your code is correct.
 

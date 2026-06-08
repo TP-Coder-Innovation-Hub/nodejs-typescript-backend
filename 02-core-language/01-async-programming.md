@@ -6,7 +6,20 @@ JavaScript is single-threaded. To do slow things (network requests, file reads) 
 
 ## The evolution
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — callback hell to promises to async await evolution diagram
+```mermaid
+graph TD
+    subgraph "Callback Hell"
+        CB["getData(function(a) {<br/>  getMore(a, function(b) {<br/>    getEvenMore(b, function(c) {<br/>      // deeply nested<br/>    })<br/>  })<br/>})"]
+    end
+    subgraph "Promises"
+        PR["getData()<br/>  .then(a => getMore(a))<br/>  .then(b => getEvenMore(b))<br/>  .then(c => use(c))"]
+    end
+    subgraph "Async/Await"
+        AW["const a = await getData()<br/>const b = await getMore(a)<br/>const c = await getEvenMore(b)"]
+    end
+    CB -->|"evolved to"| PR
+    PR -->|"evolved to"| AW
+```
 
 ### Callbacks — the original way
 
