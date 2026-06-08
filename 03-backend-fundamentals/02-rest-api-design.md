@@ -1,4 +1,4 @@
-[Mid]
+
 
 # REST API Design
 

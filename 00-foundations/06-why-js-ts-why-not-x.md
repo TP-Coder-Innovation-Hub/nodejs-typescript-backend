@@ -1,4 +1,4 @@
-[Entry]
+
 
 # Why JavaScript/TypeScript? Why Not X?
 

@@ -1,4 +1,4 @@
-[Mid]
+
 
 # TypeScript Basics
 
@@ -97,6 +97,8 @@ const response: ApiResponse<User> = {
 ```
 
 ## TypeScript is a layer
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — TypeScript compiler pipeline ts to js type check erased
 
 TypeScript compiles to JavaScript. The types are erased. At runtime, it is plain JavaScript. TypeScript does not change how your code runs. It changes how confident you are that your code is correct.
 

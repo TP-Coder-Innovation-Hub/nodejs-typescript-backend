@@ -1,10 +1,12 @@
-[Mid]
+
 
 # Async Programming
 
 JavaScript is single-threaded. To do slow things (network requests, file reads) without blocking, you use async code.
 
 ## The evolution
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — callback hell to promises to async await evolution diagram
 
 ### Callbacks — the original way
 

@@ -1,4 +1,4 @@
-[Mid]
+
 
 # HTTP and Web Servers
 

@@ -1,4 +1,4 @@
-[Mid]
+
 
 # The Event Loop
 
@@ -42,6 +42,8 @@ Output: `1`, `2`, `3`. Even with a 0ms delay, the callback is queued, not run im
 
 ## Microtasks vs macrotasks
 
+> 🖼️ **[IMAGE_PLACEHOLDER]** — JavaScript event loop microtask macrotask queue diagram
+
 There are two queues:
 
 **Microtask queue** — Promises, `queueMicrotask()`. Runs after every task, before the next macrotask.
@@ -69,6 +71,8 @@ Step by step:
 6. Next macrotask: `2`
 
 ## Why this matters for backend
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — single thread blocking vs async non-blocking event loop
 
 A single slow synchronous operation blocks the entire server. Every request waits.
 

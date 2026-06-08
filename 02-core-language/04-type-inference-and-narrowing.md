@@ -1,4 +1,4 @@
-[Mid]
+
 
 # Type Inference and Narrowing
 

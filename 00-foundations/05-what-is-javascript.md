@@ -1,10 +1,12 @@
-[Entry]
+
 
 # What Is JavaScript?
 
 A language created in 10 days in 1995 to make web pages interactive. Now it runs everywhere.
 
 ## The short history
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — JavaScript history timeline 1995 to 2026
 
 **1995** — Brendan Eich creates JavaScript at Netscape. Purpose: add interactivity to web pages. Name is a marketing trick (no relation to Java).
 

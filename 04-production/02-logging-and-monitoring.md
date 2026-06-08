@@ -1,4 +1,4 @@
-[Senior]
+
 
 # Logging and Monitoring
 

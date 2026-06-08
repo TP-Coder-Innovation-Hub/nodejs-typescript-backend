@@ -45,4 +45,4 @@ README.md                              — Navigation table and learning objecti
 - Each file is 200-500 words. Self-contained.
 - Code examples run with `bun run <file>`.
 - Files are numbered for reading order.
-- `[Entry]`, `[Mid]`, `[Senior]` badges indicate difficulty.
+- ``, ``, `` badges indicate difficulty.
