@@ -19,7 +19,7 @@ Build type-safe backend APIs with Bun, Elysia, and TypeScript.
 | 02-core-language | Async, modules, TypeScript, event loop | Mid |
 | 03-backend-fundamentals | HTTP, REST, API with Elysia, database, validation | Mid |
 | 04-production | Testing, logging, config, deployment | Senior |
-| 05-capstone | Build a complete type-safe API | Senior |
+| 05-workshop | Build a complete type-safe API | Senior |
 
 ## Stack
 
