@@ -1,4 +1,4 @@
-# Capstone Design: Real-time Chat Application
+# Workshop Design: Real-time Chat Application
 
 > Companion to [01-capstone-spec.md](./01-capstone-spec.md). Diagrams, contracts, schemas — code organization is yours.
 
