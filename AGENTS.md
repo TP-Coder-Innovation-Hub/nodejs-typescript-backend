@@ -36,7 +36,7 @@ README.md                              — Navigation table and learning objecti
   02-logging-and-monitoring.md
   03-configuration.md
   04-deployment.md
-05-capstone/                           — Full project
+05-workshop/                           — Full project
   README.md
 ```
 
