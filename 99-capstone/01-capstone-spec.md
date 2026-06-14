@@ -1,4 +1,4 @@
-# Capstone Project: Real-time Chat Application
+# Workshop Project: Real-time Chat Application
 
 **Roadmap:** JavaScript & TypeScript Backend (Bun + Hono/Elysia)
 **Architecture:** 3-tier
